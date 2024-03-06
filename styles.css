@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden !important;
+}
+
+nav {
+    height: 107px;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    padding: 40px 88px;
+    position: relative;
+}
+
+.nav-container:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 88px; /* Left margin */
+    right: 88px; /* Right margin */
+    height: 2px; /* Height of the border */
+    background-color: #0b0b13; /* Color of the border */
+}
+
+.nav-container a {
+    color: inherit; /* Make the link text color inherit from its parent */
+    text-decoration: none; /* Remove the underline from links */
+}
+
+.nav-container button {
+    padding: 12px 24px;
+    color: #2F1DFF; /* Text color for the button */
+    background-color: transparent;
+    border: 3px solid #2F1DFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 183px;
+    height: 40px;
+    border-radius: 8px;
+    font-weight: 300;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-container button h3 {
+    margin: 0; /* Remove default margins */
+    font-size: inherit; /* Optional: Inherit font-size from the button */
+    color: inherit; /* Optional: Inherit text color from the button */
+}
+
+
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 20px 88px;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: space-between; /* Adjusted from center to flex-start */
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start (left) */
+    text-align: left;
+}
+
+.left h1 {
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.left p {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 44px;
+    line-height: 40px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container h1 {
+    font-size: 3rem;
+    color: #141C31;
+    line-height: 78px;
+}
+
+
+
+.left button {
+    padding: 12px 24px;
+    background-color: #2F1DFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 370px;
+    height: 80px;
+    border-radius: 16px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.main-quote {
+    position: absolute;
+    top: 58%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.name {
+    position: absolute;
+    top: 65%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.trading-strategies {
+    text-align: center;
+    padding: 40px;
+    background-color: #f8f8f8;
+    color: #141C31;
+    margin: 20px 88px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trading-strategies h2 {
+    font-size: 2.5rem;
+    color: #141C31;
+    margin-bottom: 30px;
+}
+
+.strategies-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.strategy-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: calc(33.333% - 20px); /* Adjust width to fit three cards in a row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.strategy-card img {
+    width: 60px; /* Adjust size as needed */
+    height: auto;
+}
+
+.strategy-card h3 {
+    font-size: 1.5rem;
+    color: #141C31;
+    margin: 10px 0;
+}
+
+.strategy-card p {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+footer {
+    background-color: #141C31; /* Dark background for contrast */
+    color: white;
+    padding: 20px 88px;
+    font-size: 1rem;
+    text-align: center;
+    border-top: 1px solid #2F1DFF; /* Accent border top */
+    margin-top: 80px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure the container spans the entire width of the footer */
+}
+
+.footer-container p {
+    margin: 0; /* Resets margin for consistent spacing */
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none; /* Removes underline from links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-links a:hover {
+    color: #EF443B; /* Changes color on hover for interactive feedback */
+}
+
+
+.footer-links a:hover {
+    color: #EF443B; /* Changes color on hover for interactive feedback */
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        text-align: center; /* Center-aligns text for a consistent look */
+    }
+
+    .footer-links {
+        margin-top: 20px; /* Adds space between text and links on smaller screens */
+        justify-content: center; /* Centers links when stacked */
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 20px; /* Adjust padding for smaller screens */
+        margin: 50px 0; /* Add space above and below the container */
+    }
+
+    .left {
+        align-items: center; /* Center-align items */
+        text-align: center; /* Center-align text */
+    }
+
+    .left h1 {
+        font-size: 3.2rem; /* Smaller font size for headings */
+        margin-bottom: 0px; /* Reduced space after h1 */
+    }
+
+    .hero-image {
+        width: 380px;
+        height: auto;
+    }
+
+    .left p {
+        font-size: 18px; /* Adjusted font size for paragraphs */
+        margin-bottom: px; /* Reduced space before button */
+    }
+
+    .left a {
+        margin-top: 0; /* Eliminate additional space above the button */
+    }
+
+    .left a button {
+        font-size: 18px; /* Adjusted button font size */
+        padding: 10px 20px; /* Adjusted button padding */
+        margin-top: 0; /* Eliminate additional space above the button */
+    }
+
+}
+
+@media (max-width: 768px) {
+    nav {
+        height: auto; /* Adjust height for mobile */
+        padding: 20px; /* Adjust overall nav padding */
+    }
+
+    .hero-image {
+        margin-top: 20px; /* Adjust margin for mobile */
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px; /* Reduce padding */
+    }
+
+    .main-container {
+        padding: 20px; /* Adjust padding for mobile */
+        margin-top: 88px;
+    }
+
+    .main-container h1 {
+        line-height: 60px;
+    }
+
+    .nav-container:after {
+        display: none; /* Hide the decorative after element */
+    }
+
+    .logo {
+        width: 150px; /* Reduce logo size */
+    }
+
+    .nav-container a button h3 {
+        font-size: 12px; /* Adjust heading size within the button for mobile */
+    }
+
+    .nav-container a button {
+        padding: 8px 16px; /* Adjust button padding for mobile */
+        width: auto; /* Adjust button width for mobile */
+    }
+
+
+    .hero-image {
+        position: relative;
+    }
+
+    .main-quote {
+        width: 200px;
+        left: 5%; /* Center the quote */
+        top: 100%;
+        transform: translateX(-50%); /* Center the quote */
+        transform: translateY(-50%); /* Center the quote */
+    }
+
+    .name {
+        width: 150px;
+        left: 5%; /* Center the name */
+        top: 106%;
+        transform: translateX(-50%); /* Center the name */
+        transform: translateY(-50%); /* Center the name */
+    }
+
+    .trading-strategies {
+        margin-top: 128px !important; /* Adjust margin for mobile */
+        margin-bottom: 88px;
+    }
+}
+
+@media (max-width: 768px) {
+    .trading-strategies {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .strategies-container {
+        flex-direction: column;
+    }
+
+    .strategy-card {
+        width: 100%; /* Take full width for better readability */
+        margin-bottom: 20px; /* Space between cards */
+    }
+
+    .strategy-card h3, .strategy-card p {
+        text-align: center; /* Center-align the text for better readability */
+    }
+
+    .strategy-card dotlottie-player {
+        width: 100px; /* Adjust the Lottie animation size for mobile */
+        height: 100px;
+        margin-bottom: 10px; /* Space between Lottie animation and title */
+    }
+}
+
+
+
+
